@@ -1,6 +1,6 @@
 """Exercise 01 program 3 relational_operators 10 pts."""
 
-__author__ : "730330989"
+__author__ = "730330989"
 
 left: str = (input("Left-hand side: "))
 right: str = (input("Right-hand side: "))
