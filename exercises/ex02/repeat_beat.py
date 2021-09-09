@@ -13,6 +13,6 @@ if times <= 0:
 else:
     while i < times:
         i = i + 1
-        empty = empty + beat + " "
+        empty = empty + " " + beat
 
 print(empty)

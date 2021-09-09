@@ -27,4 +27,4 @@ else:
             print("You will soon experience a bound of unexpected wealth, use it wisely.")
         else:
             print("Take a moment to practice your appreciation.")
-print("Now go spread positive vibes!")
+print("Now, go spread positive vibes!")
