@@ -21,6 +21,8 @@ def all(xs: list[int], num: int) -> bool:
 def is_equal(xs: list[int], ys: list[int]) -> bool:
     """Determines if two lists are deeply equal."""
     i: int = 0
+    if len(xs) != len(ys):
+        return False
     while i < len(xs):
         if xs[i] != ys[i]:
             return False
@@ -33,7 +35,7 @@ def max(xs: list[int]) -> int:
     if len(xs) == 0:
         raise ValueError("max() arg is an empty List")
     i: int = 0
-    top: int = 0
+    top: int = xs[0]
     while i < len(xs):
         if xs[i] > top:
             top = xs[i]
