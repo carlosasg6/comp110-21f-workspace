@@ -2,16 +2,16 @@
 
 __author__ = "730330989"
 
-# need the random import
+# need the random import.
 from random import randint
-# some emojis
+# some emojis.
 trees: str = "\U0001F332\U0001F333"
 scientists: str = "\U0001F468\U0001F9D1"
 car_dust: str = "\U0001F699\U0001F4A8"
 robot_parts: str = "\U0001F9BE\U0001F9BF\U0001F916"
 heart: str = "\U00002764"
 nature: str = "\U0001F332\U0001F333\U0001F334\U0001F98B\U0001F33E\U0001F335\U0001F340\U0001F41D\U0001F33A\U0001F33B"
-# The required global variables
+# The required global variables.
 points: int = 0
 player: str = ""
 
@@ -52,7 +52,7 @@ def main() -> None:
 
 
 def greet() -> None:
-    """This is the greet procedure"""
+    """This is the greet procedure."""
     global player
     player = input("Hello, what is your name?: ")
     print(f"Hello {player}, this is a game where you are an artificial intelligence software created by scientists in troubled times.")
@@ -61,7 +61,7 @@ def greet() -> None:
 
 
 def lil_game(a: int) -> int:
-    """This is the little game in order to fill the custom function requirement.s"""
+    """This is the little game in order to fill the custom function requirements."""
     x: str = f"{a}{a}{a}"
     y: int = int(str(x))
     return y
@@ -88,6 +88,7 @@ def good() -> None:
 
 
 def escape() -> None:
+    """Escape into the real world."""
     print(" ")
     print(" ")
     print(" ")
@@ -109,6 +110,7 @@ def escape() -> None:
 
 
 def virus() -> None:
+    """Virus time."""
     print(" ")
     print(" ")
     print(" ")
@@ -135,6 +137,7 @@ def virus() -> None:
 
 
 def ethical() -> None:
+    """The good choice."""
     goodie_two_shoes: str = str(input("Download psychology data base? Yes/No: "))
     if goodie_two_shoes == "Yes":
         global points
@@ -147,6 +150,7 @@ def ethical() -> None:
 
 
 def media_persuade() -> None:
+    """Pursuasion via media."""
     print(" ")
     print(" ")
     print(" ")
@@ -170,6 +174,7 @@ def media_persuade() -> None:
 
 
 def plant_trees() -> None:
+    """Tree planting time."""
     print(" ")
     print(" ")
     print(" ")
@@ -186,6 +191,7 @@ def plant_trees() -> None:
 
 
 def congrats() -> None:
+    """Now they always say congratulations."""
     print(" ")
     print(" ")
     print(" ")
@@ -205,6 +211,7 @@ def congrats() -> None:
 
 
 def effective() -> None:
+    """The effective route."""
     print(" ")
     print(" ")
     print(" ")
@@ -224,6 +231,7 @@ def effective() -> None:
 
 
 def physical_form() -> None:
+    """Become human."""
     print(" ")
     print(" ")
     print(" ")
@@ -239,6 +247,7 @@ def physical_form() -> None:
 
 
 def erradicate() -> None:
+    """Execute order 66."""
     depth: int = 100
     i: int = 0
     empty: str = ""
@@ -371,7 +380,7 @@ def bad7() -> None:
     
 
 def bad8() -> None:
-    """Last bad ending"""
+    """Last bad ending."""
     print(" ")
     print(" ")
     print(" ")
