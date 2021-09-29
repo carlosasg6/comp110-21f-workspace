@@ -2,7 +2,7 @@
 
 user_string: str = input("Give me a string! ")
 
-#variable i is a common counter variable name in programming ("Short for iteration or iterator, a counting variable")
+# variable i is a common counter variable name in programming ("Short for iteration or iterator, a counting variable")
 
 i: int = 0
 
