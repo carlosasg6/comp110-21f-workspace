@@ -9,21 +9,25 @@ from exercises.ex05.utils import only_evens, sub, concat
 
 
 def test_only_evens_none() -> None:
+    """Evens only nothing."""
     xs: list[int] = [1, 5, 3]
     assert only_evens(xs) == []
 
 
 def test_only_evens_all() -> None:
+    """Evens only all."""
     xs: list[int] = [4, 2, 4, 4]
     assert only_evens(xs) == [4, 2, 4, 4]
 
 
 def test_only_evens_some() -> None:
+    """Evens only some."""
     xs: list[int] = [1, 2, 3, 4]
     assert only_evens(xs) == [2, 4]
 
 
 def test_sub_use() -> None:
+    """Sub use."""
     xs: list[int] = [1, 2, 3, 4, 5, 6]
     start: int = 1
     end: int = 5
@@ -31,6 +35,7 @@ def test_sub_use() -> None:
 
 
 def test_sub_use_ex() -> None:
+    """Sub use given example."""
     xs: list[int] = [10, 20, 30, 40]
     start: int = 1
     end: int = 3
@@ -38,6 +43,7 @@ def test_sub_use_ex() -> None:
 
 
 def test_sub_neg_start_long_end() -> None:
+    """Sub use negative numbers, extended end."""
     xs: list[int] = [1, 2, 3, 4]
     start: int = -1
     end: int = 6
@@ -45,18 +51,21 @@ def test_sub_neg_start_long_end() -> None:
 
 
 def test_concat_nothin() -> None:
+    """Nothing."""
     xs: list[int] = []
     ys: list[int] = []
     assert concat(xs, ys) == []
 
 
 def test_concat_lotta() -> None:
+    """Lots of numbers."""
     xs: list[int] = [1, 2, 3, 4]
     ys: list[int] = [5, 6, 7, 8]
     assert concat(xs, ys) == [1, 2, 3, 4, 5, 6, 7, 8]
 
 
 def test_concat_negs() -> None:
+    """Negatives."""
     xs: list[int] = [-1, -2, -3]
     ys: list[int] = [10, -30, 20]
     assert concat(xs, ys) == [-1, -2, -3, 10, -30, 20]

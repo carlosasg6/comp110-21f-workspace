@@ -24,7 +24,7 @@ def sub(xs: list[int], start: int, end: int) -> list[int]:
         return xs
     if start < 0:
         start = 0
-    if end > len(xs) - 1:
+    if end > len(xs):
         end = len(xs) - 1
     while start < end:
         ys.append(xs[start])
